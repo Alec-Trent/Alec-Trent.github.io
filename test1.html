@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alec Trent's Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <body>
+    <div id="Header">
+      <h1><a href="#" class="MenuHead" onclick="scrollToHeader()">Welcome To My Portfolio</a></h1>
+      <nav>
+        <ul>
+          <a href="#" class="MenuLink" onclick="scrollToAbout()">About</a>
+          <a href="#" class="MenuLink" onclick="scrollToPortfolio()">Portfolio</a>
+          <a href="#" class="MenuLink" onclick="scrollToTimeline()">Timeline</a>
+          <a href="#" class="MenuLink" onclick="scrollToResume()">Resume</a>
+        </ul>
+      </nav>
+    </div>
+    <div id="HeaderImage">
+      <img src="collageHeader3.png" alt="HeaderImage"> 
+    </div>
+    <div id="About">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, augue nec facilisis suscipit, ex elit luctus nulla, nec posuere ipsum nunc eu justo.</p>
+    </div>
+    <div id="Portfolio">
+      <h2>Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, augue nec facilisis suscipit, ex elit luctus nulla, nec posuere ipsum nunc eu justo.</p>
+    </div>
+    <div id="Timeline">
+      <h2>Timeline</h2>
+        <div class="TimelineItem">
+          <div class="TimelineDate">2022</div>
+          <div class="TimelineContent">
+            <h3>Joined Ricardo Defense Inc.</h3>
+            <p>I was hired as a Software Developer for Ricardo Defense Inc. My responsibilites include...</p>
+            <h3>Graduated from Michigan Technological University</h3>
+            <p>Graduated from Michigan Technological University with a BS in Computer Science.</p>
+          </div>
+        </div>
+        <div class="TimelineItem">
+          <div class="TimelineDate">2021</div>
+          <div class="TimelineContent">
+            <h3>Junior Software Developer Internship at Own Your Business LLC</h3>
+            <p>Project: Develop customizations, and crystal reports for manufacturing ERP customers.
+              ▪ Customized manufacturing ERPs and crystal reports to meet customer needs.
+              ▪ Worked with customer data in test environments when testing customizations.
+              ▪ Communicated with customers to help determine requirements for a project.
+              ▪ Performed upgrades for customers between ERP versions.
+              </p>
+          </div>
+        </div>
+        <div class="TimelineItem">
+          <div class="TimelineDate">2023</div>
+          <div class="TimelineContent">
+            <h3>Future Event</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="Resume">
+      <h2>Resume</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales, augue nec facilisis suscipit, ex elit luctus nulla, nec posuere ipsum nunc eu justo.</p>
+    </div>
+
+    <script>
+      function scrollToHeader() {
+        event.preventDefault();
+        var headerPosition = document.getElementById('Header').offsetTop;
+        window.scrollTo({
+          top: headerPosition,
+          behavior: "smooth"
+        })
+      };
+      function scrollToAbout() {
+        event.preventDefault();
+        var aboutPosition = document.getElementById('About').offsetTop;
+        window.scrollTo({
+          top: aboutPosition,
+          behavior: "smooth"
+        })
+      };
+      function scrollToPortfolio() {
+        event.preventDefault();
+        var portfolioPosition = document.getElementById('Portfolio').offsetTop;
+        window.scrollTo({
+          top: portfolioPosition,
+          behavior: "smooth"
+        })
+      };
+      function scrollToTimeline() {
+        event.preventDefault();
+        var timelinePosition = document.getElementById('Timeline').offsetTop;
+        window.scrollTo({
+          top: timelinePosition,
+          behavior: "smooth"
+        })
+      };
+      function scrollToResume() {
+        event.preventDefault();
+        var resumePosition = document.getElementById('Resume').offsetTop;
+        window.scrollTo({
+          top: resumePosition,
+          behavior: "smooth"
+        })
+      };
+    </script>
+  </body>
+</html>
